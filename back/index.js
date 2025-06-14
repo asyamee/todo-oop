@@ -4,7 +4,13 @@ const bodyParser = require('body-parser')
 
 const app = express();
 
-app.use(cors());
+const allowedOrigin = 'https://todo-oop-nine.vercel.app'
+
+const corsOptions = {
+    origin: allowedOrigin,
+}
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 const userRoutes = require('./routes/user')
