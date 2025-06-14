@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "https://todo-oop-back.vercel.app/";
+const API = "https://todo-oop-back.vercel.app";
 
 type Project = {
   id: number
